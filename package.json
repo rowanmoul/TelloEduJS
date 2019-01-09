@@ -1,40 +1,43 @@
 {
-  "name": "tello-edu-js",
-  "version": "0.0.0",
-  "description": "An API library for controlling TelloEdu drones using Tello SDK 2.0 and Node.js",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rowanmoul/TelloEduJS.git"
-  },
-  "keywords": [
-    "Tello",
-    "TelloEdu",
-    "Tello Edu",
-    "Drone",
-    "Tello Drone",
-    "DJI",
-    "Ryze",
-    "Ryze Robotics"
-  ],
-  "author": "Rowan Moul",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rowanmoul/TelloEduJS/issues"
-  },
-  "homepage": "https://github.com/rowanmoul/TelloEduJS#readme",
-  "devDependencies": {
-    "chai": "~4.2.0",
-    "documentation": "~9.1.1",
-    "eslint": "~5.11.0",
-    "eslint-config-standard": "~12.0.0",
-    "eslint-plugin-import": "~2.14.0",
-    "eslint-plugin-node": "~8.0.0",
-    "eslint-plugin-promise": "~4.0.1",
-    "eslint-plugin-standard": "~4.0.0",
-    "mocha": "~5.2.0"
-  }
+    "name": "tello-edu-js",
+    "version": "0.0.0",
+    "description": "An API library for controlling TelloEdu drones using Tello SDK 2.0 and Node.js",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "updateDocs": "./node_modules/.bin/documentation build -f html -g -o docs",
+        "lintDocs": "./node_modules/.bin/documentation lint"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rowanmoul/TelloEduJS.git"
+    },
+    "keywords": [
+        "Tello",
+        "TelloEdu",
+        "Tello Edu",
+        "Drone",
+        "Tello Drone",
+        "DJI",
+        "Ryze",
+        "Ryze Robotics"
+    ],
+    "author": "Rowan Moul",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/rowanmoul/TelloEduJS/issues"
+    },
+    "homepage": "https://github.com/rowanmoul/TelloEduJS#readme",
+    "devDependencies": {
+        "chai": "~4.2.0",
+        "documentation": "~9.1.1",
+        "eslint": "~5.11.0",
+        "eslint-config-standard": "~12.0.0",
+        "eslint-plugin-import": "~2.14.0",
+        "eslint-plugin-jsdoc": "~3.15.1",
+        "eslint-plugin-node": "~8.0.0",
+        "eslint-plugin-promise": "~4.0.1",
+        "eslint-plugin-standard": "~4.0.0",
+        "mocha": "~5.2.0"
+    }
 }
