@@ -1,7 +1,7 @@
 /**
  * A Mission object containing a set of commands for a Tello Edu drone.
  *
- * @param waitForResponse - Flag to set wether to wait between commands or not.
+ * @param {boolean} waitForResponse - Optional flag to set whether to wait between commands or not. (Default false)
  */
 class Mission {
     constructor(waitForResponse = false) {

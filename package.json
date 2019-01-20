@@ -4,7 +4,7 @@
     "description": "An API library for controlling TelloEdu drones using Tello SDK 2.0 and Node.js",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "./node_modules/.bin/mocha",
         "updateDocs": "./node_modules/.bin/documentation build -f html -g -o docs",
         "lintDocs": "./node_modules/.bin/documentation lint"
     },
