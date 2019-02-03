@@ -2,12 +2,7 @@ const expect = require("chai").expect;
 const Drone = require("../src/Drone");
 
 describe("Drone Class", function() {
-    context("Constructor with no arguments", function() {
-        it("should produce a Drone instance with an undefined ip address.", function() {
-            const drone = new Drone();
-            expect(drone).to.have.property("ipAddress").that.is.undefined;
-        });
-
+    context("Constructor", function() {
         it("should produce a Drone instance with method 'activateSDKMode'", function() {
             const drone = new Drone();
             expect(drone).to.have.property("activateSDKMode").that.is.a("function");
@@ -56,6 +51,13 @@ describe("Drone Class", function() {
         it("should produce a Drone instance with method 'getWirelessSettings'", function() {
             const drone = new Drone();
             expect(drone).to.have.property("getWirelessSettings").that.is.a("function");
+        });
+
+        context("with no arguments", function() {
+            it("should produce a Drone instance with an undefined ip address.", function() {
+                const drone = new Drone();
+                expect(drone).to.have.property("ipAddress").that.is.undefined;
+            });
         });
     });
 });
